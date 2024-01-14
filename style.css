@@ -3,6 +3,13 @@ body {
     background-image: url('https://img.freepik.com/premium-photo/blurred-light-blue-and-white-background-defocused-art-abstract-denim-gradient-backdrop-with-blur-and-bokeh_113767-4676.jpg');
     background-repeat: none;
     background-size: cover;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 td {
@@ -23,17 +30,39 @@ img {
     height: 20px;
 }
 
-p {
+main p {
     border: 1px solid brown;
     border-collapse: collapse;
     text-align: center;
     border-radius: 15px;
 }
 
-footer a {
+.gamelink, .troll{
     text-decoration: none;
     border: 2px solid green;
     border-radius: 10px;
     border-collapse: collapse;
     color: blue;
+    padding: 2px;
+}
+
+header h1, footer h2, footer h3{
+    font-weight: normal;
+}
+
+table td {
+    padding: 2px;
+}
+
+.sitelink {
+    text-decoration: none;
+    border: 2px solid green;
+    border-radius: 10px;
+    border-collapse: collapse;
+    color: green;
+    padding: 2px;
+}
+
+footer p {
+    text-align: center;
 }
